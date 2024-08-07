@@ -6,7 +6,9 @@
     --color-blue: #3366ff;
     --color-red: #ff6250;
     --color-yellow: #ffdf90;
+    --color-yellow-accent: #b5a479;
     --color-purple: #bfaff2;
+    --color-purple-accent: #d4cfe4;
     --color-white: #ffffff;
 
     --button-height: 50px;
@@ -54,6 +56,34 @@ input:-webkit-autofill {
     transition: background-color 5000s ease-in-out 0s;
 }
 
+/* ANIMATION */
+
+.welcome__title {
+    opacity: 0;
+}
+
+.welcome__description {
+    opacity: 0;
+}
+
+.welcome__button {
+    opacity: 0;
+}
+
+.welcome__image {
+    opacity: 0;
+}
+
+.partners {
+    opacity: 0;
+}
+
+.admin-panel__image {
+    opacity: 0;
+}
+
+/* END ANIMATION */
+
 .visually__hidden {
     position: absolute;
     width: 1px;
@@ -85,6 +115,10 @@ input:-webkit-autofill {
     padding-block: var(--section-padding-y);
 }
 
+.main {
+    contain: paint;
+}
+
 /* COMPONENTS */
 
 .button {
@@ -102,8 +136,29 @@ input:-webkit-autofill {
     background-color: var(--color-purple);
 }
 
+.button.purple:hover {
+    background-color: var(--color-purple-accent);
+}
+
 .button.yellow {
     background-color: var(--color-yellow);
+}
+
+.button.yellow:hover {
+    background-color: var(--color-yellow-accent);
+}
+
+.button-text {
+    height: var(--button-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    width: 110px;
+}
+
+.button-text:hover {
+    background-color: var(--color-gray-dark);
 }
 
 .input {
@@ -153,6 +208,7 @@ input:-webkit-autofill {
     height: var(--header-height);
     display: flex;
     align-items: center;
+    opacity: 0;
 }
 
 .header__inner {
@@ -166,7 +222,6 @@ input:-webkit-autofill {
 }
 
 .header__button-text {
-    padding: 5px;
     margin-right: 25px;
 }
 
@@ -200,13 +255,32 @@ input:-webkit-autofill {
 
 .partners__inner {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    row-gap: 25px;
+    column-gap: 50px;
+    overflow: hidden;
+    width: 1080px;
+}
+
+.partners__list {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 50px;
+    animation: scroll 20s linear infinite;
+}
+
+.partners__list-item {
+    max-height: 35px;
+    flex-shrink: 0;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - 50px));
+    }
 }
 
 .partners__image {
-    margin-inline: auto;
     height: auto;
 }
 

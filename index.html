@@ -41,6 +41,9 @@
         <link rel="stylesheet" href="./styles/fonts.css" />
         <link rel="stylesheet" href="./styles/style.css" />
         <link rel="stylesheet" href="./styles/reset.css" />
+        <script src="./scripts/gsap-core.js" defer></script>
+        <script src="./scripts/gsap-scroll-trigger.js" defer></script>
+        <script src="./scripts/animations.js" defer></script>
     </head>
     <body>
         <header class="header">
@@ -58,7 +61,7 @@
                 </button>
             </div>
         </header>
-        <main>
+        <main class="main">
             <h1 class="visually__hidden">
                 Wallet - service for hold your money.
             </h1>
@@ -97,41 +100,100 @@
             <section class="partners section">
                 <h2 class="visually__hidden">Our partners.</h2>
                 <div class="partners__inner container">
-                    <img
-                        src="./images/logos/accenture.png"
-                        alt="accenture"
-                        class="partners__image"
-                        height="35"
-                        width="133"
-                    />
-                    <img
-                        src="./images/logos/apple.png"
-                        alt="apple"
-                        class="partners__image"
-                        height="35"
-                        width="30"
-                    />
-                    <img
-                        src="./images/logos/microsoft.png"
-                        alt="microsoft"
-                        class="partners__image"
-                        height="35"
-                        width="164"
-                    />
-                    <img
-                        src="./images/logos/google.png"
-                        alt="google"
-                        class="partners__image"
-                        height="35"
-                        width="107"
-                    />
-                    <img
-                        src="./images/logos/bearing-point.png"
-                        alt="bearing-point"
-                        class="partners__image"
-                        height="35"
-                        width="219"
-                    />
+                    <ul class="partners__list">
+                        <li class="partners__list-item">
+                            <img
+                                src="./images/logos/accenture.png"
+                                alt="accenture"
+                                class="partners__image"
+                                height="35"
+                                width="133"
+                            />
+                        </li>
+                        <li class="partners__list-item">
+                            <img
+                                src="./images/logos/apple.png"
+                                alt="apple"
+                                class="partners__image"
+                                height="35"
+                                width="30"
+                            />
+                        </li>
+                        <li class="partners__list-item">
+                            <img
+                                src="./images/logos/microsoft.png"
+                                alt="microsoft"
+                                class="partners__image"
+                                height="35"
+                                width="164"
+                            />
+                        </li>
+                        <li class="partners__list-item">
+                            <img
+                                src="./images/logos/google.png"
+                                alt="google"
+                                class="partners__image"
+                                height="35"
+                                width="107"
+                            />
+                        </li>
+                        <li class="partners__list-item">
+                            <img
+                                src="./images/logos/bearing-point.png"
+                                alt="bearing-point"
+                                class="partners__image"
+                                height="35"
+                                width="219"
+                            />
+                        </li>
+                    </ul>
+                    <ul class="partners__list">
+                        <li class="partners__list-item">
+                            <img
+                                src="./images/logos/accenture.png"
+                                alt="accenture"
+                                class="partners__image"
+                                height="35"
+                                width="133"
+                            />
+                        </li>
+                        <li class="partners__list-item">
+                            <img
+                                src="./images/logos/apple.png"
+                                alt="apple"
+                                class="partners__image"
+                                height="35"
+                                width="30"
+                            />
+                        </li>
+                        <li class="partners__list-item">
+                            <img
+                                src="./images/logos/microsoft.png"
+                                alt="microsoft"
+                                class="partners__image"
+                                height="35"
+                                width="164"
+                            />
+                        </li>
+                        <li class="partners__list-item">
+                            <img
+                                src="./images/logos/google.png"
+                                alt="google"
+                                class="partners__image"
+                                height="35"
+                                width="107"
+                            />
+                        </li>
+                        <li class="partners__list-item">
+                            <img
+                                src="./images/logos/bearing-point.png"
+                                alt="bearing-point"
+                                class="partners__image"
+                                height="35"
+                                width="219"
+                            />
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="admin-panel section">

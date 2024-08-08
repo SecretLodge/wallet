@@ -1,46 +1,62 @@
-gsap.to('.header', {
-    scrollTrigger: '.header',
-    opacity: 1,
-    duration: 2.5,
-});
+gsap.registerPlugin(ScrollTrigger);
 
-gsap.to('.welcome__title', {
-    scrollTrigger: '.welcome__title',
-    opacity: 1,
-    delay: 0.25,
-    duration: 2.5,
-});
-
-gsap.to('.welcome__description', {
-    scrollTrigger: '.welcome__description',
-    opacity: 1,
-    delay: 0.5,
-    duration: 2.5,
-});
-
-gsap.to('.welcome__button', {
-    scrollTrigger: '.welcome__button',
-    opacity: 1,
-    delay: 0.75,
-    duration: 2.5,
-});
-
-gsap.to('.welcome__image', {
-    scrollTrigger: '.welcome__image',
-    opacity: 1,
-    delay: 1,
-    duration: 2.5,
-});
-
-gsap.to('.partners', {
-    scrollTrigger: '.partners',
-    opacity: 1,
-    delay: 1.25,
-    duration: 2.5,
-});
-
-gsap.to('.admin-panel__image', {
-    scrollTrigger: '.admin-panel__image',
-    opacity: 1,
-    duration: 2.5,
-});
+gsap.fromTo(
+    '.header',
+    { opacity: 0 },
+    { scrollTrigger: '.header', duration: 3, opacity: 1 }
+);
+gsap.fromTo(
+    '.welcome__title',
+    { opacity: 0 },
+    { scrollTrigger: '.header', duration: 3, opacity: 1 }
+);
+gsap.fromTo(
+    '.welcome__description',
+    { opacity: 0 },
+    { scrollTrigger: '.welcome__description', duration: 3, opacity: 1 }
+);
+gsap.fromTo(
+    '.welcome__button',
+    { opacity: 0 },
+    { scrollTrigger: '.welcome__button', duration: 3, opacity: 1 }
+);
+gsap.fromTo(
+    '.welcome__image-wrapper',
+    { opacity: 0 },
+    { scrollTrigger: '.welcome__image-wrapper', duration: 3, opacity: 1 }
+);
+gsap.fromTo(
+    '.partners',
+    { opacity: 0 },
+    { scrollTrigger: '.partners', duration: 3, opacity: 1 }
+);
+gsap.fromTo(
+    '.admin-panel',
+    { opacity: 0 },
+    { scrollTrigger: '.admin-panel', duration: 3, opacity: 1 }
+);
+gsap.fromTo(
+    '.possibilities__card',
+    { opacity: 0 },
+    { scrollTrigger: '.possibilities__card', duration: 3, opacity: 1 }
+);
+gsap.fromTo(
+    '.feedback__card',
+    { opacity: 0 },
+    { scrollTrigger: '.feedback__card', duration: 3, opacity: 1 }
+);
+gsap.fromTo(
+    '.contact-us__body',
+    { opacity: 0 },
+    { scrollTrigger: '.contact-us__body', duration: 3, opacity: 1 }
+);
+gsap.fromTo(
+    '.contact-us__image-wrapper',
+    { opacity: 0 },
+    { scrollTrigger: '.contact-us__image-wrapper', duration: 3, opacity: 1 }
+);
+gsap.fromTo(
+    '.footer',
+    { opacity: 0 },
+    { scrollTrigger: '.footer', duration: 3, opacity: 1 }
+);

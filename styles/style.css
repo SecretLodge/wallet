@@ -56,34 +56,6 @@ input:-webkit-autofill {
     transition: background-color 5000s ease-in-out 0s;
 }
 
-/* ANIMATION */
-
-.welcome__title {
-    opacity: 0;
-}
-
-.welcome__description {
-    opacity: 0;
-}
-
-.welcome__button {
-    opacity: 0;
-}
-
-.welcome__image {
-    opacity: 0;
-}
-
-.partners {
-    opacity: 0;
-}
-
-.admin-panel__image {
-    opacity: 0;
-}
-
-/* END ANIMATION */
-
 .visually__hidden {
     position: absolute;
     width: 1px;
@@ -208,7 +180,6 @@ input:-webkit-autofill {
     height: var(--header-height);
     display: flex;
     align-items: center;
-    opacity: 0;
 }
 
 .header__inner {
